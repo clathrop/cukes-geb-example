@@ -1,7 +1,7 @@
 Cucumber-jvm-geb-example
 ==
 
-skeleton project for demonstrating the integration between Cucumber-jvm and Geb
+skeleton project for demonstrating the integration between Cucumber-jvm and Geb using the HtmlUnit Driver
 --
 
 To run all the scenarios in the project: 
