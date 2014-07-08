@@ -9,12 +9,12 @@ class GoogleHomePage extends Page {
 	}
 
 	static content = {
-		searchInput { $('input', name: 'q') }
-		searchButton { $('button', name: 'btnG') }
+		searchField { $("input[name=q]") }
+		searchButton(to: GoogleResultsPage) { $("input[value='Google Search']") }
 	}
-
+ 
 	void searchFor(String searchTerm) {
-		searchInput.value(searchTerm)
+		searchField.value searchTerm
 		searchButton.click()
 	}
 
